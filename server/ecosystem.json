@@ -1,0 +1,32 @@
+{
+  "apps": [
+    {
+      "name": "urtic-api",
+      "script": "src",
+      "env": {
+        "COMMON_VARIABLE": "true"
+      },
+      "env_staging": {
+        "NODE_ENV": "staging",
+        "DATABASE_URL":
+          "mongodb://172.19.0.4:27017/urtic?ssl=true&sslValidate=false"
+      }
+    }
+  ],
+
+  "deploy": {
+    "staging": {
+      "user": "appconic",
+      "host": "52.235.38.238",
+      "ref": "origin/develop",
+      "repo": "git@bitbucket.org:appconic/urtic-web.git",
+      "path": "/home/appconic/urtic",
+      "key": "/Volumes/dev-data/Documents/keys/appconic-csl-2/id_rsa",
+      "post-deploy":
+        "cd server && npm install --production && pm2 startOrRestart ecosystem.json --env staging",
+      "env": {
+        "NODE_ENV": "staging"
+      }
+    }
+  }
+}

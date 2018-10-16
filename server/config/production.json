@@ -1,0 +1,14 @@
+{
+  "host": "localhost",
+  "url": "https://www.mimonitor.ca",
+  "port": "PORT",
+  "authentication": {
+    "secret": "FEATHERS_AUTH_SECRET",
+    "jwt": {
+      "audience": "https://www.mimonitor.ca",
+      "expiresIn": "1y"
+    }
+  },
+  "restrictInviteByCode": true,
+  "inviteCode": "54321"
+}

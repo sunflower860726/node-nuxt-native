@@ -1,0 +1,60 @@
+/*! @source http://purl.eligrey.com/github/FileSaver.js/blob/master/FileSaver.js */
+
+/*!
+ * Vue.js v2.5.17
+ * (c) 2014-2018 Evan You
+ * Released under the MIT License.
+ */
+
+/**
+ * vuex v3.0.1
+ * (c) 2017 Evan You
+ * @license MIT
+ */
+
+/*! Buefy v0.6.7 | MIT License | github.com/buefy/buefy */
+
+/*!
+ * Determine if an object is a Buffer
+ *
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
+ */
+
+/*!
+ * @overview es6-promise - a tiny implementation of Promises/A+.
+ * @copyright Copyright (c) 2014 Yehuda Katz, Tom Dale, Stefan Penner and contributors (Conversion to ES6 API by Jake Archibald)
+ * @license   Licensed under MIT license
+ *            See https://raw.githubusercontent.com/stefanpenner/es6-promise/master/LICENSE
+ * @version   v4.2.5+7f2b526d
+ */
+
+/**
+ * vue-meta v1.5.5
+ * (c) 2018 Declan de Wet & Sébastien Chopin (@Atinux)
+ * @license MIT
+ */
+
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+/*!
+ * inflection
+ * Copyright(c) 2011 Ben Lin <ben@dreamerslab.com>
+ * MIT Licensed
+ *
+ * @fileoverview
+ * A port of inflection-js to node.js module.
+ */
+
+/*!
+ * inflection
+ * Copyright(c) 2011 Ben Lin <ben@dreamerslab.com>
+ * MIT Licensed
+ *
+ * @fileoverview
+ * A port of inflection-js to node.js module.
+ */

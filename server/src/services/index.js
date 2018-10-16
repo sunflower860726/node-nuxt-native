@@ -1,0 +1,40 @@
+const users = require('./users/users.service.js');
+const hcp = require('./hcp/hcp.service.js');
+const patient = require('./patient/patient.service.js');
+const consent = require('./consent/consent.service.js');
+const uas = require('./uas/uas.service.js');
+const uasWeek = require('./uas-week/uas-week.service');
+const aas = require('./aas/aas.service.js');
+const aasWeek = require('./aas-week/aas-week.service');
+const invite = require('./invite/invite.service.js');
+const profile = require('./profile/profile.service.js');
+const report = require('./report/report.service.js');
+const hcpSignup = require('./hcp-signup/hcp-signup.service.js');
+const signup = require('./signup/signup.service.js');
+const medications = require('./medication/medication.service');
+const logStream = require('./log-stream/log-stream.service.js');
+const aqol = require('./aqol/aqol.service');
+const uqol = require('./uqol/uqol.service');
+const ct = require('./control-test/control-test.service');
+
+module.exports = function() {
+  const app = this; // eslint-disable-line no-unused-vars
+  app.configure(users);
+  app.configure(hcp);
+  app.configure(patient);
+  app.configure(consent);
+  app.configure(uas);
+  app.configure(uasWeek);
+  app.configure(aas);
+  app.configure(aasWeek);
+  app.configure(invite);
+  app.configure(profile);
+  app.configure(report);
+  app.configure(hcpSignup);
+  app.configure(signup);
+  app.configure(medications);
+  app.configure(logStream);
+  app.configure(aqol);
+  app.configure(uqol);
+  app.configure(ct);
+};

@@ -1,0 +1,32 @@
+{
+  "host": "0.0.0.0",
+  "url": "http://localhost:3000",
+  "email": "noreply@urtic.ca",
+  "port": 8000,
+  "mongodb": "DATABASE_URL",
+  "public": "../public",
+  "authentication": {
+    "secret":
+      "f4cd2233461501e1411ede0e0a1c73881d75f590cb677fb3034d873147301364b3394ecb9a8854ff6ee00e10c807fc153750b7f4731e18bf9ba690659c8eff57f7894367172816e2f46ce90d9752335abd6cf05174955bab74758e7c37b8ac6bcd50097f0f6630566107b27fb02dcb4ca75a41c664e1422aba8ff424823f3ebdadbddaf09c49c936dea0831bc9ee008a0e88449eddb0b55e2c6f9da722fb4594bff5d5d78efb23d0452af64438b32b1da1cc36d0de4a1726c7260ad5f75500ddfa0f153c7a54f47273b159dfdbe057503f677347d7cf1b1601d5ffe3cfcbe62970a689c665b029cec4cc3502720af99dfd612413520959d890beefeada325560",
+    "strategies": ["jwt", "local"],
+    "path": "/api/authentication",
+    "service": "api/users",
+    "jwt": {
+      "header": {
+        "type": "access"
+      },
+      "audience": "http://localhost:3000",
+      "subject": "anonymous",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "15m"
+    },
+    "local": {
+      "entity": "user",
+      "usernameField": "email",
+      "passwordField": "password"
+    }
+  },
+  "restrictInviteByCode": false,
+  "inviteCode": "12345"
+}
